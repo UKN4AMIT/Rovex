@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROVEX — Travel Slowly. See More.</title>
+  <meta name="description"
+    content="Discover thoughtful travel guides, beautiful destinations and practical trip plans across India with ROVEX.">
+  <meta name="theme-color" content="#f7f5ef">
+  <link rel="canonical" href="https://www.rovex.in/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"ROVEX","url":"https://www.rovex.in/","description":"Independent travel inspiration and practical travel guides for India."}
+  </script>
+</head>
+
+<body>
+  <div class="announcement">INDEPENDENT TRAVEL JOURNAL · MADE FOR THE CURIOUS</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="ROVEX home">ROVEX<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#destinations">Destinations</a>
+      <a href="#journal">Travel journal</a>
+      <a href="#planner">Trip planner</a>
+      <a href="#about">Our story</a>
+      <a href="#contact">Contact</a>
+      <button class="saved-nav" id="savedNav">Saved <span id="savedCount">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Mountain valley in the Indian Himalayas"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">FIND YOUR OWN WAY OUT THERE</p>
+        <h1>Travel well.<br><em>Feel more.</em></h1>
+        <p class="hero-copy">Thoughtful journeys, honest budgets and places worth taking the long way for.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#destinations">Explore destinations <span>↗</span></a>
+          <a class="text-link light-link" href="#journal">Read the journal</a>
+        </div>
+      </div>
+      <div class="hero-note"><span>01 / 04</span><span>INDIA, BEYOND THE OBVIOUS</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow">A DIFFERENT KIND OF TRAVEL GUIDE</p>
+      <div class="intro-grid">
+        <h2>Less rushing.<br><em>More remembering.</em></h2>
+        <div>
+          <p class="intro-copy">ROVEX is an independent travel journal for people who want to explore India with
+            curiosity, not a checklist. Find grounded destination guides, realistic trip costs and itineraries that
+            leave room for the unexpected.</p>
+          <a class="under-link" href="#about">A little about us <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations section-wrap" id="destinations">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">GO SOMEWHERE GOOD</p>
+          <h2>Places to <em>begin.</em></h2>
+        </div>
+        <p class="section-aside">A few places we keep<br>coming back to.</p>
+      </div>
+      <div class="destination-tools">
+        <label class="search-box"><span>⌕</span><input id="destinationSearch" type="search"
+            placeholder="Search a place, state or mood…" aria-label="Search destinations"></label>
+        <div class="filter-row" id="filterRow">
+          <button class="filter-chip active" data-filter="All">All places</button>
+          <button class="filter-chip" data-filter="Mountains">Mountains</button>
+          <button class="filter-chip" data-filter="Coast">Coast</button>
+          <button class="filter-chip" data-filter="Culture">Culture</button>
+          <button class="filter-chip" data-filter="Nature">Nature</button>
+        </div>
+      </div>
+      <div class="destination-grid" id="destinationGrid"></div>
+      <p class="empty-state hidden" id="emptyState">No destinations found. Try another search.</p>
+    </section>
+
+    <section class="feature-band">
+      <div class="feature-photo"></div>
+      <div class="feature-copy">
+        <p class="eyebrow light">THE ART OF GOING SLOW</p>
+        <h2>Take the scenic<br><em>route.</em></h2>
+        <p>Some of the best parts of a trip happen between the places on your map. Our guides help you plan the
+          essentials, then leave space for everything else.</p>
+        <a class="button button-outline-light" href="#journal">Explore the journal <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="journal section-wrap" id="journal">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">NOTES FROM THE ROAD</p>
+          <h2>The travel <em>journal.</em></h2>
+        </div>
+        <p class="section-aside">Useful ideas for your<br>next little escape.</p>
+      </div>
+      <div class="journal-grid">
+        <article class="journal-card journal-large">
+          <a href="#planner" class="journal-image journal-img-one" aria-label="Plan a Himalayan trip"></a>
+          <div class="journal-meta">TRIP PLANNING · 6 MIN READ</div>
+          <h3>How to plan a mountain escape without overplanning it</h3>
+          <p>A simple framework for choosing a base, setting a budget and keeping your days flexible.</p>
+          <a class="under-link" href="#planner">Plan your escape <span>→</span></a>
+        </article>
+        <article class="journal-card">
+          <a href="#destinations" class="journal-image journal-img-two" aria-label="Explore coastal India"></a>
+          <div class="journal-meta">SLOW TRAVEL · 5 MIN READ</div>
+          <h3>India's quieter coastlines are calling</h3>
+          <p>Look beyond the obvious beach towns and find a slower rhythm by the sea.</p>
+          <a class="under-link" href="#destinations">Find coastal places <span>→</span></a>
+        </article>
+        <article class="journal-card">
+          <a href="#planner" class="journal-image journal-img-three" aria-label="Travel on a budget"></a>
+          <div class="journal-meta">TRAVEL SMARTER · 4 MIN READ</div>
+          <h3>A realistic way to build your trip budget</h3>
+          <p>Think in daily costs, transport and a little breathing room—not just the cheapest deal.</p>
+          <a class="under-link" href="#planner">Use the trip planner <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="planner-section" id="planner">
+      <div class="section-wrap planner-layout">
+        <div class="planner-intro">
+          <p class="eyebrow light">MAKE IT YOURS</p>
+          <h2>Your next trip,<br><em>taking shape.</em></h2>
+          <p>Tell us how you like to travel. Get a simple starting point for your budget and itinerary.</p>
+          <div class="planner-footnote">ESTIMATES ARE INDICATIVE, NOT LIVE BOOKINGS.</div>
+        </div>
+        <form class="planner-form" id="plannerForm">
+          <div class="form-grid">
+            <label>Starting city<input id="startCity" type="text" placeholder="e.g. Delhi" required></label>
+            <label>Travel mood<select id="travelMood">
+                <option value="Mountains">Mountains</option>
+                <option value="Coast">Coast</option>
+                <option value="Culture">Culture</option>
+                <option value="Nature">Nature</option>
+                <option value="Any">Surprise me</option>
+              </select></label>
+            <label>Days<input id="tripDays" type="number" min="2" max="21" value="4" required></label>
+            <label>Budget per person (₹)<input id="tripBudget" type="number" min="1000" step="500" value="10000"
+                required></label>
+          </div>
+          <button class="button button-lime" type="submit">Find my trip <span>↗</span></button>
+          <div id="plannerResult" class="planner-result hidden" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-image"></div>
+      <div class="about-copy">
+        <p class="eyebrow">WHY ROVEX</p>
+        <h2>Good trips are<br><em>personal.</em></h2>
+        <p>We believe travel should feel exciting and achievable. ROVEX brings together destination inspiration,
+          practical planning and straightforward advice—so you can spend less time lost in tabs and more time out there.
+        </p>
+        <p class="small-note">Independent project · India-focused · Built for curious travellers</p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="section-wrap newsletter-inner">
+        <div>
+          <p class="eyebrow light">A LETTER FROM THE ROAD</p>
+          <h2>A little inspiration,<br><em>now and then.</em></h2>
+        </div>
+        <form id="newsletterForm" class="newsletter-form">
+          <label class="sr-only" for="newsletterEmail">Your email address</label>
+          <input id="newsletterEmail" type="email" placeholder="Your email address" required>
+          <button type="submit" aria-label="Subscribe">Join us ↗</button>
+          <p id="newsletterMessage" aria-live="polite">No spam. Just thoughtful travel notes.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div>
+        <p class="eyebrow">SAY HELLO</p>
+        <h2>Have a place<br><em>in mind?</em></h2>
+        <p>Questions, suggestions or a destination we should cover? Send us a note.</p>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <label>Your name<input type="text" id="contactName" required placeholder="Name"></label>
+        <label>Email address<input type="email" id="contactEmail" required placeholder="you@example.com"></label>
+        <label>Your message<textarea id="contactMessage" rows="4" required
+            placeholder="Tell us what's on your mind…"></textarea></label>
+        <button class="button button-dark" type="submit">Send message <span>↗</span></button>
+        <p id="contactStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand footer-brand" href="#home">ROVEX<span>.</span></a>
+      <p>Go further. Come back fuller.</p><a class="back-top" href="#home">Back to top ↑</a>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> ROVEX Travel Journal</span><span>Made for the curious,
+        everywhere.</span><span><a href="#about">About</a> · <a href="#contact">Contact</a></span></div>
+  </footer>
+
+  <dialog id="destinationDialog" class="destination-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+  <dialog id="savedDialog" class="saved-dialog">
+    <button class="dialog-close" id="savedClose" aria-label="Close">×</button>
+    <p class="eyebrow">YOUR SHORTLIST</p>
+    <h2>Saved places.</h2>
+    <div id="savedList"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
