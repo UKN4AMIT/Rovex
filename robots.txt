@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.rovex.in/sitemap.xml
+
+Sitemap: https://ukn4amit.github.io/Rovex/sitemap.xml
